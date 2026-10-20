@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vale - Localizador de Ativos e Insumos Logísticos</title>
+</head>
+<body>
+
+    <!-- Cabeçalho Global e Navegação -->
+    <header>
+        <img src="logo-vale.svg" alt="Logotipo da Vale em cores verde e amarelo" width="120" height="40">
+        <p><strong>Operações Logísticas e Unidades Industriais</strong></p>
+        <nav aria-label="Navegação Principal">
+            <ul>
+                <li><a href="index.html" aria-current="page">Início</a></li>
+                <li><a href="sobre.html">Sobre a Equipe</a></li>
+                <li><a href="retirada.html">Retirada / Devolução</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal da Home -->
+    <main>
+
+        <!-- Seção Hero / Boas-vindas -->
+        <section aria-labelledby="titulo-principal">
+            <h1 id="titulo-principal">Mapeamento e Localização Rápida de Ativos</h1>
+            <p>Encontre ferramentas, peças de reposição e insumos de manutenção em tempo real no almoxarifado ou pátio industrial.</p>
+        </section>
+
+        <!-- Seção de Busca Rápida -->
+        <section aria-labelledby="titulo-busca">
+            <h2 id="titulo-busca">Buscar Ferramenta ou Material</h2>
+            <form action="#" method="GET" role="search">
+                <label for="campo-busca">Digite o nome do item ou o código de patrimônio:</label>
+                <input 
+                    type="search" 
+                    id="campo-busca" 
+                    name="q" 
+                    placeholder="Ex: Chave Soquete 19mm ou PAT-4082" 
+                    required 
+                    aria-required="true"
+                >
+                <button type="submit" aria-label="Pesquisar localização do item">Localizar Item</button>
+            </form>
+        </section>
+
+        <!-- Seção de Status e Categorias Rápidas -->
+        <section aria-labelledby="titulo-resumo">
+            <h2 id="titulo-resumo">Resumo das Operações de Almoxarifado</h2>
+            <ul>
+                <li><strong>Disponíveis para uso:</strong> 1.240 itens</li>
+                <li><strong>Em manutenção:</strong> 38 itens</li>
+                <li><strong>Em uso / Emprestados:</strong> 152 itens</li>
+            </ul>
+        </section>
+
+        <!-- Seção do Mapa do Pátio/Almoxarifado -->
+        <section aria-labelledby="titulo-mapa">
+            <h2 id="titulo-mapa">Visão Geral da Unidade Industrial</h2>
+            <figure>
+                <img 
+                    src="mapa-layout-almoxarifado.svg" 
+                    alt="Planta baixa simplificada do almoxarifado destacando os setores A, B e C, os corredores e as coordenadas de pátio." 
+                    width="600" 
+                    height="400"
+                >
+                <figcaption>Layout simplificado do Almoxarifado Central (Setores > Corredores > Prateleiras).</figcaption>
+            </figure>
+        </section>
+
+        <!-- Atividades Recentes de Movimentação -->
+        <section aria-labelledby="titulo-historico">
+            <h2 id="titulo-historico">Últimas Movimentações Registradas</h2>
+            <table>
+                <caption>Histórico recente de retiradas e devoluções de materiais</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Código</th>
+                        <th scope="col">Item</th>
+                        <th scope="col">Localização</th>
+                        <th scope="col">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>PAT-1049</td>
+                        <td>Esmerilhadeira Angular 7"</td>
+                        <td>Galpão 02 > Corredor B > Prateleira 04</td>
+                        <td>Disponível</td>
+                    </tr>
+                    <tr>
+                        <td>PAT-3321</td>
+                        <td>Torquímetro de Estalo 1/2"</td>
+                        <td>Oficina Central > Armário 01</td>
+                        <td>Em Uso</td>
+                    </tr>
+                    <tr>
+                        <td>PAT-0084</td>
+                        <td>Bomba Hidráulica de Teste</td>
+                        <td>Pátio Externo > Coordenada C-12</td>
+                        <td>Em Manutenção</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <!-- Rodapé Acessível -->
+    <footer>
+        <p><small>&copy; 2026 Vale - Todos os direitos reservados. Sistema de Gestão e Localização de Ativos da UC14.</small></p>
+    </footer>
+
+</body>
+</html>
