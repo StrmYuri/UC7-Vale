@@ -1,0 +1,14 @@
+
+:root {
+
+  --color-primary: #007E7A;
+  --color-text: #212529;
+  --font-primary: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-heading: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  --font-size-base: 1rem;
+}
+
+body {
+    color:var(--color-primary);
+    font-family:var(--font-primary);
+}
