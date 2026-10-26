@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Design System & Estilos Globais - Vale / UC7
+   Design System & Layout Flexbox - Vale / UC7
    Arquivo: style.css
    ========================================================================== */
 
@@ -36,11 +36,12 @@ body {
   min-height: 100vh;
 }
 
-/* Cabeçalho e Navegação */
+/* ==========================================================================
+   1. Navbar (Flexbox)
+   ========================================================================== */
 header {
   background-color: var(--white);
   border-bottom: 3px solid var(--color-secondary);
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
 .header-container {
@@ -80,7 +81,9 @@ nav a:hover {
   color: var(--white);
 }
 
-/* Estrutura Principal */
+/* ==========================================================================
+   2. Estrutura Principal e Flex Container
+   ========================================================================== */
 main {
   flex: 1;
   max-width: 1400px;
@@ -92,29 +95,53 @@ main {
   gap: 2rem;
 }
 
-.content-grid {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  gap: 2rem;
-}
-
-.search-section {
+/* ==========================================================================
+   3. Seção Hero (Texto + Imagem Lado a Lado via Flexbox)
+   ========================================================================== */
+.hero-section {
   background: var(--white);
-  padding: 2rem;
+  padding: 2.5rem;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap; /* Garante responsividade em telas menores */
 }
 
-.search-section h2 {
+.hero-text {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.hero-text h2 {
   font-family: var(--font-heading);
   color: var(--color-primary);
-  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+}
+
+.hero-image {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  border: 2px solid var(--border-color);
 }
 
 .search-bar-container {
   display: flex;
   gap: 1rem;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 
 .search-bar-container input {
@@ -131,8 +158,18 @@ main {
   border-color: var(--color-primary);
 }
 
-/* Tabela de Resultados */
+/* ==========================================================================
+   4. Grade de Cards / Conteúdo (Flexbox Layout)
+   ========================================================================== */
+.content-flex-container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
 .table-container {
+  flex: 3;
+  min-width: 300px;
   background: var(--white);
   border-radius: 8px;
   padding: 1.5rem;
@@ -186,8 +223,10 @@ th {
   background-color: var(--status-in-use);
 }
 
-/* Painel Lateral */
+/* Painel Lateral (Sidebar Cards) */
 .sidebar-card {
+  flex: 1;
+  min-width: 250px;
   background: var(--white);
   border-radius: 8px;
   padding: 1.5rem;
@@ -217,55 +256,9 @@ th {
   border-bottom: 1px dashed var(--border-color);
 }
 
-/* Estilos Específicos para a Página Sobre */
-.team-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-}
-
-.team-card {
-  background: var(--white);
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  text-align: center;
-}
-
-.team-card h2 {
-  font-family: var(--font-heading);
-  color: var(--color-primary);
-  margin-bottom: 1rem;
-}
-
-.team-img {
-  border-radius: 8px;
-  object-fit: cover;
-  margin-bottom: 1rem;
-  border: 3px solid var(--color-primary);
-}
-
-.team-card figcaption {
-  font-size: 0.9rem;
-  color: #6C757D;
-  margin-bottom: 1rem;
-}
-
-.team-card p {
-  margin-bottom: 0.8rem;
-}
-
-.team-card a {
-  color: var(--color-primary);
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.team-card a:hover {
-  text-decoration: underline;
-}
-
-/* Rodapé */
+/* ==========================================================================
+   5. Rodapé
+   ========================================================================== */
 footer {
   background-color: var(--color-text);
   color: var(--white);

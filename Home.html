@@ -13,7 +13,7 @@
 </head>
 <body>
 
-    <!-- Cabeçalho do Sistema -->
+    <!-- Cabeçalho / Navbar (Flexbox) -->
     <header>
         <div class="header-container">
             <div class="logo-area">
@@ -34,16 +34,23 @@
 
     <!-- Conteúdo Principal -->
     <main>
-        <!-- Bloco de Pesquisa -->
-        <section class="search-section">
-            <h2>Mapeamento e Localização Rápida de Ativos</h2>
-            <div class="search-bar-container">
-                <input type="text" placeholder="Digite o nome ou código do item (ex: PAT-2201)..." aria-label="Pesquisar item">
+        <!-- Seção Hero: Texto e Imagem Lado a Lado (Flexbox) -->
+        <section class="hero-section">
+            <div class="hero-text">
+                <h2>Mapeamento e Localização Rápida de Ativos</h2>
+                <p>Encontre ferramentas, peças de reposição e insumos de manutenção em tempo real no almoxarifado ou pátio industrial da Vale.</p>
+                <div class="search-bar-container">
+                    <input type="text" placeholder="Digite o nome ou código do item (ex: PAT-2201)..." aria-label="Pesquisar item">
+                </div>
+            </div>
+            <div class="hero-image">
+                <!-- Imagem ilustrativa do layout/mapa -->
+                <img src="https://via.placeholder.com/450x280?text=Mapa+do+Almoxarifado+Vale" alt="Layout simplificado do almoxarifado central" width="450" height="280">
             </div>
         </section>
 
-        <!-- Grade de Conteúdo (Tabela + Estatísticas) -->
-        <div class="content-grid">
+        <!-- Grade de Conteúdo / Cards estruturada com Flexbox -->
+        <div class="content-flex-container">
             <div class="table-container">
                 <h3>Resultados da Pesquisa</h3>
                 <table>
@@ -100,7 +107,7 @@
                 </table>
             </div>
 
-            <!-- Painel Lateral / Inventário Rápido -->
+            <!-- Painel Lateral / Inventário Rápido (Flexbox Item) -->
             <aside class="sidebar-card">
                 <h3>Inventário Rápido</h3>
                 <ul>
