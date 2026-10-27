@@ -1,32 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre a Equipe - Localização de Ativos</title>
 
     <!-- Importação das Fontes -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto:wght@500;700&display=swap"
+        rel="stylesheet">
+
     <!-- Vinculação do CSS Externo -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <!-- Cabeçalho Principal da Página com Navegação -->
     <header>
         <div class="header-container">
             <div class="logo-area">
                 <h1>VALE</h1>
             </div>
+
+            <!-- Botão Hambúrguer (Apenas HTML + CSS) -->
+            <input type="checkbox" id="menu-toggle" aria-label="Abrir menu de navegação">
+            <label for="menu-toggle" class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
             <nav aria-label="Navegação Principal">
                 <ul>
-                    <li><a href="home.html">Início</a></li>
-                    <li><a href="#">Pesquisar</a></li>
-                    <li><a href="#">Leitura de Código</a></li>
-                    <li><a href="#">Histórico</a></li>
-                    <li><a href="sobre.html" class="active" aria-current="page">Sobre</a></li>
-                    <li><a href="#">Ajuda</a></li>
+                    <li><a href="home.html" class="active" aria-current="page">Início</a></li>
+                    <li><a href="pesquisar.html">Pesquisar</a></li>
+                    <li><a href="leitura.html">Leitura de Código</a></li>
+                    <li><a href="historico.html">Histórico</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="ajuda.html">Ajuda</a></li>
                 </ul>
             </nav>
         </div>
@@ -36,19 +47,23 @@
     <main>
         <section class="about-header">
             <h2>Sobre a Equipe</h2>
-            <p>Conheça os integrantes responsáveis pelo projeto de Mapeamento e Localização Rápida de Ativos da Vale.</p>
+            <p>Conheça os integrantes responsáveis pelo projeto de Mapeamento e Localização Rápida de Ativos da Vale.
+            </p>
         </section>
 
         <div class="team-grid">
             <!-- Integrante 1: Yuri Honorato -->
             <article class="team-card">
                 <figure class="team-figure">
-                    <img src="imgyuri.jpg" alt="Foto de rosto de Yuri Honorato" class="team-img" width="130" height="130">
+                    <img src="imgyuri.jpg" alt="Foto de rosto de Yuri Honorato" class="team-img" width="130"
+                        height="130">
                 </figure>
                 <h3>Yuri Honorato</h3>
                 <span class="skill-badge">Back-end Developer</span>
                 <p>
-                    <a href="https://www.instagram.com/strm.yuri?obrf=MWF0MWQ2czR4MTJveQ==" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Acessar o perfil de Yuri Honorato no Instagram">Perfil no Instagram</a>
+                    <a href="https://www.instagram.com/strm.yuri?obrf=MWF0MWQ2czR4MTJveQ==" target="_blank"
+                        rel="noopener noreferrer" class="social-link"
+                        aria-label="Acessar o perfil de Yuri Honorato no Instagram">Perfil no Instagram</a>
                 </p>
             </article>
 
@@ -60,7 +75,9 @@
                 <h3>Filipe</h3>
                 <span class="skill-badge">Front-end Developer</span>
                 <p>
-                    <a href="https://www.instagram.com/rodriguesfilipemartins?dlrf=d2RjcDg1OTJhOHR1" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Acessar o perfil de Filipe no Instagram">Perfil no Instagram</a>
+                    <a href="https://www.instagram.com/rodriguesfilipemartins?dlrf=d2RjcDg1OTJhOHR1" target="_blank"
+                        rel="noopener noreferrer" class="social-link"
+                        aria-label="Acessar o perfil de Filipe no Instagram">Perfil no Instagram</a>
                 </p>
             </article>
         </div>
@@ -72,4 +89,5 @@
     </footer>
 
 </body>
+
 </html>

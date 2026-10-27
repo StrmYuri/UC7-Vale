@@ -1,26 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ajuda e Suporte - Vale</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto:wght@500;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <div class="header-container">
             <div class="logo-area">
                 <h1>VALE</h1>
             </div>
+
+            <!-- Botão Hambúrguer (Apenas HTML + CSS) -->
+            <input type="checkbox" id="menu-toggle" aria-label="Abrir menu de navegação">
+            <label for="menu-toggle" class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
             <nav aria-label="Navegação Principal">
                 <ul>
-                    <li><a href="home.html">Início</a></li>
+                    <li><a href="home.html" class="active" aria-current="page">Início</a></li>
                     <li><a href="pesquisar.html">Pesquisar</a></li>
                     <li><a href="leitura.html">Leitura de Código</a></li>
                     <li><a href="historico.html">Histórico</a></li>
                     <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="ajuda.html" class="active" aria-current="page">Ajuda</a></li>
+                    <li><a href="ajuda.html">Ajuda</a></li>
                 </ul>
             </nav>
         </div>
@@ -35,17 +47,21 @@
         <div class="content-flex-container" style="flex-direction: column; gap: 1.5rem;">
             <div class="table-container" style="padding: 2rem;">
                 <h3 style="color: var(--color-primary); margin-bottom: 0.5rem;">Como localizar um item rapidamente?</h3>
-                <p>Utilize a barra de pesquisa na página inicial ou na aba <strong>Pesquisar</strong> digitando o nome ou o código PAT do equipamento. O sistema indicará o galpão, corredor e prateleira exatos.</p>
+                <p>Utilize a barra de pesquisa na página inicial ou na aba <strong>Pesquisar</strong> digitando o nome
+                    ou o código PAT do equipamento. O sistema indicará o galpão, corredor e prateleira exatos.</p>
             </div>
 
             <div class="table-container" style="padding: 2rem;">
-                <h3 style="color: var(--color-primary); margin-bottom: 0.5rem;">O que fazer em caso de divergência no inventário?</h3>
-                <p>Se o item não estiver na localização apontada pelo painel, comunique imediatamente o almoxarifado central ou utilize a aba de suporte interno para reajustar as coordenadas.</p>
+                <h3 style="color: var(--color-primary); margin-bottom: 0.5rem;">O que fazer em caso de divergência no
+                    inventário?</h3>
+                <p>Se o item não estiver na localização apontada pelo painel, comunique imediatamente o almoxarifado
+                    central ou utilize a aba de suporte interno para reajustar as coordenadas.</p>
             </div>
 
             <div class="table-container" style="padding: 2rem;">
                 <h3 style="color: var(--color-primary); margin-bottom: 0.5rem;">Contato com o Suporte Técnico de TI</h3>
-                <p>Em caso de instabilidade no painel web ou leitor de código, contate o ramal interno de TI da unidade operacional da Vale ou acione a equipe de desenvolvimento (Yuri e Filipe).</p>
+                <p>Em caso de instabilidade no painel web ou leitor de código, contate o ramal interno de TI da unidade
+                    operacional da Vale ou acione a equipe de desenvolvimento (Yuri e Filipe).</p>
             </div>
         </div>
     </main>
@@ -54,4 +70,5 @@
         <p>Sistema de Localização de Ativos - Desafio 07 (Vale) | UC7 & UC14</p>
     </footer>
 </body>
+
 </html>

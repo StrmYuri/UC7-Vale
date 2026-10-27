@@ -394,25 +394,135 @@ footer {
 }
 
 /* ==========================================================================
-   7. Media Queries para Responsividade Extrema
+   1. Cabeçalho e Navegação (Desktop)
+   ========================================================================== */
+header {
+  background-color: var(--white);
+  border-bottom: 3px solid var(--color-secondary);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.logo-area h1 {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Esconde o checkbox e o botão no computador */
+#menu-toggle, 
+.menu-icon {
+  display: none;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--color-text);
+  font-weight: 500;
+  padding: 0.5rem 0.8rem;
+  border-radius: 6px;
+  transition: background-color 0.2s, color 0.2s;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+/* Apenas a página ativa ou com mouse por cima fica verde */
+nav a.active, 
+nav a:hover {
+  background-color: var(--color-primary);
+  color: var(--white);
+}
+
+/* ==========================================================================
+   2. Menu Hambúrguer Responsivo para Telemóveis / Mobile (Apenas HTML/CSS)
    ========================================================================== */
 @media (max-width: 768px) {
   .header-container {
+    padding: 1rem;
+    flex-wrap: wrap;
+  }
+
+  /* Exibe o ícone hambúrguer no mobile */
+  .menu-icon {
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    justify-content: space-between;
+    width: 28px;
+    height: 20px;
+    cursor: pointer;
+  }
+
+  .menu-icon span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: var(--color-primary);
+    border-radius: 3px;
+    transition: all 0.3s ease;
+  }
+
+  /* Esconde o menu por padrão no mobile */
+  nav {
+    display: none;
+    width: 100%;
+    margin-top: 1rem;
   }
 
   nav ul {
-    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
   }
 
-  main {
-    padding: 0 1rem;
-    margin: 1rem auto;
+  nav li {
+    width: 100%;
   }
 
-  .hero-section {
-    padding: 1.5rem;
+  nav a {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
+    background-color: #F8F9FA;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+  }
+
+  /* QUANDO O CHECKBOX É MARCADOR (CLIQUE NO HAMBÚRGUER), O MENU APARECE! */
+  #menu-toggle:checked ~ nav {
+    display: block;
+  }
+
+  /* Animação das barrinhas do hambúrguer ao abrir (vira um X) */
+  #menu-toggle:checked ~ .menu-icon span:nth-child(1) {
+    transform: translateY(8.5px) rotate(45deg);
+  }
+  #menu-toggle:checked ~ .menu-icon span:nth-child(2) {
+    opacity: 0;
+  }
+  #menu-toggle:checked ~ .menu-icon span:nth-child(3) {
+    transform: translateY(-8.5px) rotate(-45deg);
   }
 }
