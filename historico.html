@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histórico de Movimentações - Vale</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-area">
+                <h1>VALE</h1>
+            </div>
+            <nav aria-label="Navegação Principal">
+                <ul>
+                    <li><a href="home.html">Início</a></li>
+                    <li><a href="pesquisar.html">Pesquisar</a></li>
+                    <li><a href="leitura.html">Leitura de Código</a></li>
+                    <li><a href="historico.html" class="active" aria-current="page">Histórico</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="ajuda.html">Ajuda</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="about-header">
+            <h2>Histórico de Movimentações</h2>
+            <p>Registro completo de retiradas, devoluções e manutenções realizadas pelas equipes nas unidades industriais.</p>
+        </section>
+
+        <div class="content-flex-container">
+            <div class="table-container" style="flex: 100%;">
+                <h3>Últimas Transações</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Data / Hora</th>
+                            <th>Código PAT</th>
+                            <th>Item</th>
+                            <th>Colaborador</th>
+                            <th>Ação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>27/10/2026 - 15:42</td>
+                            <td>PAT-3321</td>
+                            <td>Torquímetro 1/2"</td>
+                            <td>Carlos Eduardo</td>
+                            <td><strong>Retirada</strong></td>
+                        </tr>
+                        <tr>
+                            <td>27/10/2026 - 14:10</td>
+                            <td>PAT-0084</td>
+                            <td>Bomba Hidráulica de Teste</td>
+                            <td>Manutenção Mecânica</td>
+                            <td><strong>Enviado p/ Manutenção</strong></td>
+                        </tr>
+                        <tr>
+                            <td>27/10/2026 - 11:30</td>
+                            <td>PAT-1049</td>
+                            <td>Esmerilhadeira Angular 7"</td>
+                            <td>Marcos Vinícius</td>
+                            <td><strong>Devolução</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Sistema de Localização de Ativos - Desafio 07 (Vale) | UC7 & UC14</p>
+    </footer>
+</body>
+</html>
