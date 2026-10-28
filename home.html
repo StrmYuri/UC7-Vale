@@ -1,19 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Painel de Localização de Ativos - Vale</title>
-
-    <!-- Importação das Fontes -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto:wght@500;700&display=swap"
-        rel="stylesheet">
-
-    <!-- Vinculação do CSS Externo -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
     <header>
@@ -22,7 +15,6 @@
                 <h1>VALE</h1>
             </div>
 
-            <!-- Botão Hambúrguer (Apenas HTML + CSS) -->
             <input type="checkbox" id="menu-toggle" aria-label="Abrir menu de navegação">
             <label for="menu-toggle" class="menu-icon">
                 <span></span>
@@ -43,26 +35,20 @@
         </div>
     </header>
 
-    <!-- Conteúdo Principal -->
     <main>
-        <!-- Seção Hero: Texto e Imagem Lado a Lado (Flexbox) -->
         <section class="hero-section">
             <div class="hero-text">
                 <h2>Mapeamento e Localização Rápida de Ativos</h2>
-                <p>Encontre ferramentas, peças de reposição e insumos de manutenção em tempo real no almoxarifado ou
-                    pátio industrial da Vale.</p>
+                <p>Encontre ferramentas, peças de reposição e insumos de manutenção em tempo real no almoxarifado ou pátio industrial da Vale.</p>
                 <div class="search-bar-container">
-                    <input type="text" placeholder="Digite o nome ou código do item (ex: PAT-2201)..."
-                        aria-label="Pesquisar item">
+                    <input type="text" placeholder="Digite o nome ou código do item (ex: PAT-2201)..." aria-label="Pesquisar item">
                 </div>
             </div>
             <div class="hero-image">
-                <img src="https://via.placeholder.com/450x280?text=Mapa+do+Almoxarifado+Vale"
-                    alt="Layout simplificado do almoxarifado central" width="450" height="280">
+                <img src="https://via.placeholder.com/450x280?text=Mapa+do+Almoxarifado+Vale" alt="Layout simplificado do almoxarifado central" width="450" height="280">
             </div>
         </section>
 
-        <!-- Grade de Conteúdo / Cards estruturada com Flexbox -->
         <div class="content-flex-container">
             <div class="table-container">
                 <h3>Resultados da Pesquisa</h3>
@@ -80,47 +66,30 @@
                             <td>PAT-2201</td>
                             <td>Bomba Hidráulica #2201</td>
                             <td>Galpão A - Prateleira 4B</td>
-                            <td>
-                                <span class="status-badge">
-                                    <span class="status-dot available"></span> Disponível
-                                </span>
-                            </td>
+                            <td><span class="status-badge"><span class="status-dot available"></span> Disponível</span></td>
                         </tr>
                         <tr>
                             <td>PAT-0300</td>
                             <td>Filtro de Óleo X300</td>
                             <td>Galpão A - Prateleira 4B</td>
-                            <td>
-                                <span class="status-badge">
-                                    <span class="status-dot available"></span> Disponível
-                                </span>
-                            </td>
+                            <td><span class="status-badge"><span class="status-dot available"></span> Disponível</span></td>
                         </tr>
                         <tr>
                             <td>PAT-0015</td>
                             <td>Válvula Esférica #15</td>
                             <td>Galpão A - Prateleira 3B</td>
-                            <td>
-                                <span class="status-badge">
-                                    <span class="status-dot available"></span> Disponível
-                                </span>
-                            </td>
+                            <td><span class="status-badge"><span class="status-dot available"></span> Disponível</span></td>
                         </tr>
                         <tr>
                             <td>PAT-3321</td>
                             <td>Torquímetro 1/2"</td>
                             <td>Oficina Central > Armário 01</td>
-                            <td>
-                                <span class="status-badge">
-                                    <span class="status-dot in-use"></span> Em Uso
-                                </span>
-                            </td>
+                            <td><span class="status-badge"><span class="status-dot in-use"></span> Em Uso</span></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
 
-            <!-- Painel Lateral / Inventário Rápido -->
             <aside class="sidebar-card">
                 <h3>Inventário Rápido</h3>
                 <ul>
@@ -133,11 +102,9 @@
         </div>
     </main>
 
-    <!-- Rodapé -->
     <footer>
         <p>Sistema de Localização de Ativos - Desafio 07 (Vale) | UC7 & UC14</p>
     </footer>
 
 </body>
-
 </html>
